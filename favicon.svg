@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#1a0f07"/>
+  <!-- vrh (zastavica) -->
+  <path d="M16 3.2v3.6" stroke="#e2c472" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- pagoda krov sa ulegnutim ivicama -->
+  <path d="M16 6.2 C17.6 11.5 21.5 15.6 28.5 17.6 L28.5 19.4 L3.5 19.4 L3.5 17.6 C10.5 15.6 14.4 11.5 16 6.2 Z" fill="#c9a84c"/>
+  <!-- volan (zupci) -->
+  <path d="M3.5 19.4 h25 v1.2 l-2.08 1.6 l-2.08 -1.6 l-2.08 1.6 l-2.08 -1.6 l-2.08 1.6 l-2.1 -1.6 l-2.08 1.6 l-2.08 -1.6 l-2.08 1.6 l-2.08 -1.6 l-2.08 1.6 l-2.08 -1.6 z" fill="#c9a84c"/>
+  <!-- stubovi -->
+  <rect x="5" y="21" width="1.9" height="7.6" rx=".5" fill="#c9a84c"/>
+  <rect x="25.1" y="21" width="1.9" height="7.6" rx=".5" fill="#c9a84c"/>
+</svg>
