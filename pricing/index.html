@@ -289,7 +289,7 @@ footer a:hover {
   gtag('js', new Date());
   gtag('config', 'G-FVY4ERHJ81');
 </script>
-</head><body class="antialiased bg-page text-default tracking-tight"><!-- SLAVA TRAKA --><a href="/#slava" style="display:block;background:linear-gradient(90deg,#8a6a2a,#c9a84c,#8a6a2a);color:#1a0f05;text-align:center;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:.3px;padding:9px 16px;text-decoration:none;">Sezona slava je počela · Stolovi, stolice i escajg za Mitrovdan, Aranđelovdan i Svetog Nikolu · <u>Rezerviši na vreme →</u></a><!-- /SLAVA TRAKA --><div class="text-muted dark:text-slate-400 bg-black dark dark:bg-transparent dark:border-b dark:border-slate-800 gap-1 flex overflow-hidden px-3 py-2 relative text-ellipsis text-sm whitespace-nowrap justify-center"><span class="text-muted dark:text-slate-400 font-medium">📞 0604195911 &nbsp;·&nbsp; Dostupni 7 dana u nedelji &nbsp;·&nbsp; Beograd i okolina</span></div><header class="w-full mx-auto border-b border-gray-50/0 ease-in-out flex-none sticky top-0 transition-[opacity] z-40" data-aw-sticky-header="true" id="header"><div class="absolute inset-0"></div><div class="relative mx-auto md:px-6 text-default max-w-7xl md:grid md:grid-cols-3 md:items-center px-3 py-3 w-full"><div class="flex justify-between"><a class="flex items-center" href="/"><span style="display:flex;align-items:center;gap:12px;"><svg width="220" height="72" viewBox="0 0 270 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</head><body class="antialiased bg-page text-default tracking-tight"><!-- SLAVA TRAKA --><a href="/#slava" style="display:block;background:linear-gradient(90deg,#8a6a2a,#c9a84c,#8a6a2a);color:#1a0f05;text-align:center;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:.3px;padding:9px 16px;text-decoration:none;"><style>.slava-bar-s{display:none}@media(max-width:640px){.slava-bar-l{display:none}.slava-bar-s{display:inline}}</style><span class="slava-bar-l">Sezona slava je počela · Stolovi, stolice i escajg za Mitrovdan, Aranđelovdan i Svetog Nikolu · </span><span class="slava-bar-s">Sezona slava · Oprema za sve goste · </span><u>Rezerviši na vreme →</u></a><!-- /SLAVA TRAKA --><div class="text-muted dark:text-slate-400 bg-black dark dark:bg-transparent dark:border-b dark:border-slate-800 gap-1 flex overflow-hidden px-3 py-2 relative text-ellipsis text-sm whitespace-nowrap justify-center"><span class="text-muted dark:text-slate-400 font-medium">📞 0604195911 &nbsp;·&nbsp; Dostupni 7 dana u nedelji &nbsp;·&nbsp; Beograd i okolina</span></div><header class="w-full mx-auto border-b border-gray-50/0 ease-in-out flex-none sticky top-0 transition-[opacity] z-40" data-aw-sticky-header="true" id="header"><div class="absolute inset-0"></div><div class="relative mx-auto md:px-6 text-default max-w-7xl md:grid md:grid-cols-3 md:items-center px-3 py-3 w-full"><div class="flex justify-between"><a class="flex items-center" href="/"><span style="display:flex;align-items:center;gap:12px;"><svg width="220" height="72" viewBox="0 0 270 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <image x="-8" y="-16" width="145" height="106" href="/logo-tent.webp" preserveAspectRatio="xMidYMid meet"/>
   <line x1="108" y1="8" x2="108" y2="70" stroke="#c9a84c" stroke-width="0.8" opacity="0.5"/>
   <text x="118" y="34" style="font-family:'Libre Baskerville',Georgia,serif;font-size:21px;letter-spacing:2px;fill:#f0e6d0;font-weight:400">TENT</text>
@@ -550,4 +550,58 @@ window.addEventListener("load", revealOnScroll);
 })();
 </script>
 
+<!-- SLAVA KARTICA -->
+<style>
+.slava-pop{position:fixed;z-index:60;left:24px;bottom:24px;width:380px;max-width:calc(100vw - 32px);
+  background:linear-gradient(180deg,#24170c 0%,#160c05 100%);border:1.5px solid #c9a84c;border-radius:12px;
+  box-shadow:0 24px 60px -12px rgba(0,0,0,.75),0 0 0 4px rgba(201,168,76,.10),0 0 40px rgba(201,168,76,.22);
+  padding:22px 22px 20px;transform:translateY(140%);opacity:0;transition:transform .55s cubic-bezier(.2,.9,.25,1.1),opacity .4s}
+.slava-pop.is-open{transform:none;opacity:1}
+.slava-pop__x{position:absolute;top:8px;right:8px;width:34px;height:34px;border:0;background:none;color:#8a7050;font-size:22px;line-height:1;cursor:pointer;border-radius:50%}
+.slava-pop__x:hover{color:#e8dcc8;background:rgba(201,168,76,.1)}
+.slava-pop__tag{display:inline-block;font-family:'DM Sans',sans-serif;font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase;color:#1a0f05;background:#c9a84c;border-radius:3px;padding:4px 8px;margin-bottom:12px}
+.slava-pop__title{font-family:'Libre Baskerville',Georgia,serif;font-size:21px;line-height:1.25;color:#f5f0e8;margin:0 28px 8px 0}
+.slava-pop__title em{color:#d4b97a}
+.slava-pop__text{font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.55;color:#bfae92;margin:0 0 6px}
+.slava-pop__dates{font-family:'DM Sans',sans-serif;font-size:12.5px;color:#c9a84c;margin:0 0 16px}
+.slava-pop__btn{display:flex;align-items:center;justify-content:center;gap:8px;background:#d4b97a;color:#1a0f05;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14.5px;padding:13px 18px;border-radius:99px;text-decoration:none;transition:background .2s}
+.slava-pop__btn:hover{background:#e2c98c}
+.slava-pop__more{display:block;text-align:center;font-family:'DM Sans',sans-serif;font-size:12.5px;color:#c9a84c;text-decoration:none;margin-top:10px}
+.slava-pop__more:hover{text-decoration:underline}
+@media (max-width:640px){
+  .slava-pop{left:8px;right:8px;bottom:8px;width:auto;max-width:none;padding:16px 16px 14px;border-radius:12px}
+  .slava-pop__title{font-size:18px}
+  .slava-pop__text{display:none}
+  .slava-pop__dates{margin-bottom:12px}
+  .slava-pop__more{display:none}
+}
+@media (prefers-reduced-motion:reduce){.slava-pop{transition:none}}
+</style>
+<div class="slava-pop" id="slavaPop" role="dialog" aria-label="Oprema za slavu" hidden>
+  <button class="slava-pop__x" type="button" aria-label="Zatvori">×</button>
+  <span class="slava-pop__tag">Sezona slava</span>
+  <p class="slava-pop__title">Slava kod kuće? <em>Opremu za sve goste</em> donosimo mi.</p>
+  <p class="slava-pop__text">Stolovi, stolnjaci, Tiffany stolice, tanjiri, escajg i čaše. Dovezemo, postavimo i odnesemo.</p>
+  <p class="slava-pop__dates">Mitrovdan · Aranđelovdan · Sveti Nikola</p>
+  <a class="slava-pop__btn" href="https://wa.me/381604195911?text=Zdravo%2C%20zanima%20me%20oprema%20za%20slavu.%20Datum%3A%20%20%7C%20Broj%20gostiju%3A%20%20%7C%20Mesto%3A%20" target="_blank" rel="noopener noreferrer">Rezerviši za slavu →</a>
+  <a class="slava-pop__more" href="/#slava">Pogledaj primer cene</a>
+</div>
+<script>
+(function(){
+  var KEY='slavaPopZatvoreno', DANA=3, KRAJ=new Date('2026-12-20T00:00:00');
+  if(new Date()>KRAJ) return;                       // posle Svetog Nikole se vise ne prikazuje
+  var pop=document.getElementById('slavaPop'); if(!pop) return;
+  try{var t=parseInt(localStorage.getItem(KEY)||'0',10); if(t && Date.now()-t < DANA*864e5) return;}catch(e){}
+  var shown=false;
+  function show(){ if(shown) return; shown=true; pop.hidden=false; requestAnimationFrame(function(){requestAnimationFrame(function(){pop.classList.add('is-open');});}); window.removeEventListener('scroll',onScroll); }
+  function close(){ pop.classList.remove('is-open'); setTimeout(function(){pop.hidden=true;},500); try{localStorage.setItem(KEY,String(Date.now()));}catch(e){} }
+  function onScroll(){ var h=document.documentElement; if((h.scrollTop+innerHeight)/h.scrollHeight>0.4) show(); }
+  setTimeout(show,6000); window.addEventListener('scroll',onScroll,{passive:true});
+  pop.querySelector('.slava-pop__x').addEventListener('click',close);
+  pop.querySelector('.slava-pop__btn').addEventListener('click',function(){ try{localStorage.setItem(KEY,String(Date.now()));}catch(e){} if(window.gtag) gtag('event','slava_whatsapp_klik'); });
+  pop.querySelector('.slava-pop__more').addEventListener('click',close);
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && shown) close(); });
+})();
+</script>
+<!-- /SLAVA KARTICA -->
 </body></html>
